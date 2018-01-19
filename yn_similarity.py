@@ -35,7 +35,7 @@ os.environ["PYSPARK_PYTHON"]="/home/yan/anaconda2/envs/tensorflow-conda/bin/pyth
 SparkMaster_IP = "spark://192.168.1.108:7077"
 
 #set this App Name
-YewnoAssigment = "Yewno ssigment"
+TestSimilarity = "TestSimilarity"
 
 #depending on what kinds of requirements, we can add or remove some special chars in Special_Chars
 #when we process words, we remove these special chars like some punctuations in words...
@@ -49,7 +49,7 @@ Special_Chars = '&.,()[]{}:;"'
 def load_and_process_data( ):
 
     #set SparkConf
-    conf = SparkConf().setAppName( YewnoAssigment ).setMaster( SparkMaster_IP )
+    conf = SparkConf().setAppName( TestSimilarity ).setMaster( SparkMaster_IP )
 
     #set SparkContext
     sc = SparkContext(conf=conf)
